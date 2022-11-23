@@ -17,7 +17,7 @@ const inputs = [
     },
     {
         name: "percent",
-        label: "Percentual de juros (Ao mês)"
+        label: "Percentual de juros % (Ao mês)"
     },
     {
         name: "time",
