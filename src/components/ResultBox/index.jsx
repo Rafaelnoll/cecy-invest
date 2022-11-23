@@ -19,7 +19,7 @@ export default function ResultBox({ result, isLoaded }) {
                     <Box title="Valor total bruto" result={`R$${result.grossTotal.toFixed(2)}`} type="grossTotal" />
                     <Box title="Valor investido" result={`R$${result.invested}`} type="invested" />
                     <Box title="Valor em juros" result={`R$${result.interestAmount.toFixed(2)}`} type="interestAmount" />
-                    <Box title="Imposto de renda sobre rentabilidade" result={`R$${result.tax * 100}%`} />
+                    <Box title="Imposto de renda sobre rentabilidade" result={`${result.tax * 100}%`} />
                     <Box title="Valor pago em imposto de renda" result={`R$${result.incomeTax.toFixed(2)}`} />
                     <Box title="Valor total líquido" result={`R$${result.liquidAmount.toFixed(2)}`} type="liquidAmount" />
                 </div>
