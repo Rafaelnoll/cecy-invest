@@ -2,6 +2,7 @@ import { Button, Container } from "@mui/material";
 import { useRef, useState } from "react";
 import Input from "../Input";
 import ResultBox from "../ResultBox";
+import IconLogo from "../../assets/imgs/iconLogo.png";
 import "./styles.css";
 
 const taxes = {
@@ -72,7 +73,7 @@ export default function Calculator() {
     return (
         <>
             <header className="header">
-                <h1>Cecy <span>Invest</span></h1>
+                <img src={IconLogo} /><h1>Cecy <span>Invest</span></h1>
             </header>
             <main>
                 <Container maxWidth="sm">
@@ -88,6 +89,17 @@ export default function Calculator() {
                         <Button onClick={calculateAmount} variant="contained" >Calcular</Button>
                     </form>
                     <ResultBox result={amount} isLoaded={isLoaded} />
+                    <footer className="footer">
+                        <span>Projeto Turma 305</span>
+                        <p>Trabalho realizado nas disciplinas: Linguagem tecnológica(Prof. Solange) e modelagem matemática(Prof. Luciano) para a feira de atividades.</p>
+                        <span>Objetivo:</span>
+                        <p>Mostrar as pessoas um pouco sobre o vasto mundo finaceiro.</p>
+                        <ul className="footer-list">
+                            <span>Participantes:</span>
+                            <li>Guilherme Picolli</li>
+                            <li>Rafael Noll</li>
+                        </ul>
+                    </footer>
                 </Container>
             </main>
         </>
